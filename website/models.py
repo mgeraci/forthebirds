@@ -62,3 +62,12 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return unicode(self).encode('utf-8')
+
+class PatreonThankYou(models.Model):
+    text = models.TextField(blank=True)
+
+    def __unicode__(self):
+        return self.text
+
+    def __str__(self):
+        return unicode(self).encode('utf-8')
