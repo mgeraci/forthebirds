@@ -20,11 +20,34 @@
     </ul>
   </div>
 
-  <div class="home-thanks">
-    {% for supporter in supporters %}
-      {{ supporter.text }}{% if not forloop.last %}, {% endif %}
-    {% endfor %}
-  </div>
+  {% if supporters %}
+    <div class="home-thanks">
+      <div class="home-thanks-intro">
+        <img
+          src="{{ STATIC_URL }}images/patreon-wordmark.svg"
+          alt="patreon logo"
+          class="home-thanks-intro-icon wordmark"
+        />
+        <img
+          src="{{ STATIC_URL }}images/patreon-logo.svg"
+          alt="patreon logo"
+          class="home-thanks-intro-icon logo"
+        />
+        <div class="home-thanks-intro-text">
+          I would like to thank my incredibly generous supporters on Patreon;
+          if you enjoy bird content please consider
+          <a href="https://www.patreon.com/lauraerickson">
+            contributing here</a>!
+        </div>
+      </div>
+
+      <div class="home-thanks-supporters">
+        {% for supporter in supporters %}
+          {{ supporter.text }}{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
 
   <script>
     $(document).ready(function() {
