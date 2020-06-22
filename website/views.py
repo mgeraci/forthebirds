@@ -24,6 +24,7 @@ def home(request):
     """Render the homepage."""
     supporters = PatreonThankYou.objects.order_by('text')
     context = {
+        'PATREON_LINK': settings.PATREON_LINK,
         'slideshow_images': SLIDESHOW_IMAGES,
         'supporters': supporters,
     }
