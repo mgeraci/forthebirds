@@ -65,6 +65,8 @@ class UserProfile(models.Model):
 
 class PatreonThankYou(models.Model):
     text = models.CharField(max_length=100, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return self.text
