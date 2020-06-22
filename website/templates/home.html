@@ -23,16 +23,18 @@
   {% if supporters %}
     <div class="home-thanks">
       <div class="home-thanks-intro">
-        <img
-          src="{{ STATIC_URL }}images/patreon-wordmark.svg"
-          alt="patreon logo"
-          class="home-thanks-intro-icon wordmark"
-        />
-        <img
-          src="{{ STATIC_URL }}images/patreon-logo.svg"
-          alt="patreon logo"
-          class="home-thanks-intro-icon logo"
-        />
+        <a href="{{ PATREON_LINK }}">
+          <img
+            src="{{ STATIC_URL }}images/patreon-wordmark.svg"
+            alt="patreon logo"
+            class="home-thanks-intro-icon wordmark"
+          />
+          <img
+            src="{{ STATIC_URL }}images/patreon-logo.svg"
+            alt="patreon logo"
+            class="home-thanks-intro-icon logo"
+          />
+        </a>
         <div class="home-thanks-intro-text">
           I would like to thank my incredibly generous supporters on Patreon;
           if you enjoy bird content please consider
