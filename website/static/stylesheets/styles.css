@@ -1313,38 +1313,33 @@ html, body {
         display: inline-block;
         clear: none; }
 
-.itunes-badge-large {
-  display: inline-block;
-  overflow: hidden;
-  background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;
-  width: 140px;
-  height: 40px; }
-
-.itunes-badge-small {
-  display: inline-block;
-  overflow: hidden;
-  background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-sm.svg) no-repeat;
-  width: 80px;
-  height: 15px; }
-
 #radio #links {
   width: 100%;
   float: left;
   margin-bottom: 36px;
   font-family: "Dosis", sans-serif;
   font-size: 21px; }
-  #radio #links a {
-    display: inline-block;
-    margin-right: 18px; }
-    #radio #links a#itunes-link {
-      float: right;
-      margin-top: 0px;
-      margin-right: 0px; }
+  #radio #links .radio-link {
+    display: inline-block; }
+    #radio #links .radio-link + .radio-link {
+      margin-left: 18px; }
+  #radio #links .external-links {
+    position: relative;
+    bottom: 5px;
+    float: right; }
+    #radio #links .external-links .radio-link {
+      width: auto;
+      height: 40px; }
       @media (max-width: 500px) {
-        #radio #links a#itunes-link {
-          float: none;
-          position: relative;
-          top: 12px; } }
+        #radio #links .external-links .radio-link {
+          height: 34px; } }
+      #radio #links .external-links .radio-link img {
+        height: 100%; }
+    @media (max-width: 500px) {
+      #radio #links .external-links {
+        float: none;
+        position: relative;
+        top: 12px; } }
 
 #radio #year-program-container {
   float: left;
