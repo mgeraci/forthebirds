@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 
 sass.compiler = require('node-sass');
 
-var inputDirectory = 'website/static/**/*.sass';
+var watchFiles = '**/*.sass';
 var inputFile = 'website/static/stylesheets/styles.sass';
 var outputDirectory = 'website/static/stylesheets/';
 
@@ -14,5 +14,5 @@ var compileCSS = function () {
 }
 
 gulp.task('default', function () {
-  gulp.watch(inputDirectory, compileCSS);
+  gulp.watch(watchFiles, compileCSS);
 });
