@@ -43,5 +43,5 @@ npm install --dev-save
 
 And to start the gulp build script, run the following in the project root:
 ```
-gulp
+npx gulp
 ```
