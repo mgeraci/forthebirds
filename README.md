@@ -30,13 +30,11 @@ Django/Python. Scripts live in the standard location
 
 Javascript uses [jQuery](https://jquery.com).
 
-CSS is in [SASS](http://sass-lang.com).
-[gulpfile.js](gulpfile.js) can be used to automate the compilation of
-SASS in development.
-To set up, assuming [Gulp.js](http://gulpjs.com) is installed on the
-system, run the following in the project root (which will install the
-dependencies---listed in [package.json](package.json)---in a git-ignored
-directory called `node_modules`):
+CSS is written in [SASS](http://sass-lang.com), and uses
+[gulp](gulpfile.js) to automate the compilation of SASS in development.
+To get set up, install the project's dependencies--listed in
+[package.json](package.json)---into a git-ignored directory called
+`node_modules`) by running the following in the project root:
 ```
 npm install --dev-save
 ```
