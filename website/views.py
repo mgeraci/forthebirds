@@ -22,7 +22,7 @@ SLIDESHOW_IMAGES = (
 
 def home(request):
     """Render the homepage."""
-    supporters = PatreonThankYou.objects.order_by('created_at')
+    supporters = PatreonThankYou.objects.order_by('text')
     context = {
         'slideshow_images': SLIDESHOW_IMAGES,
         'supporters': supporters,
