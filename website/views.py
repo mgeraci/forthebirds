@@ -4,7 +4,7 @@ from django.http import Http404, HttpResponsePermanentRedirect
 from django.shortcuts import render, get_object_or_404
 
 from utils.http import http_response_ok
-from website.models import User, UploadedImage
+from website.models import User, UploadedImage, PatreonThankYou
 
 SLIDESHOW_IMAGES = (
     'https://farm9.staticflickr.com/8377/8443224020_906862b207_b.jpg',
@@ -22,8 +22,10 @@ SLIDESHOW_IMAGES = (
 
 def home(request):
     """Render the homepage."""
+    supporters = PatreonThankYou.objects.order_by('created_at')
     context = {
         'slideshow_images': SLIDESHOW_IMAGES,
+        'supporters': supporters,
     }
     return render(request, 'home.html', context)
 

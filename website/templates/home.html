@@ -20,6 +20,12 @@
     </ul>
   </div>
 
+  <div class="home-thanks">
+    {% for supporter in supporters %}
+      {{ supporter.text }}{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+  </div>
+
   <script>
     $(document).ready(function() {
       $("#home-slider").unslider({
