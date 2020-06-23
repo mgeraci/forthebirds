@@ -32,9 +32,9 @@ Javascript uses [jQuery](https://jquery.com).
 
 CSS is written in [SASS](http://sass-lang.com), and uses
 [gulp](gulpfile.js) to automate the compilation of SASS in development.
-To get set up, install the project's dependencies--listed in
-[package.json](package.json)---into a git-ignored directory called
-`node_modules`) by running the following in the project root:
+Assuming you have [NPM](https://www.npmjs.com/get-npm), install the
+project's dependencies--listed in [package.json](package.json)--
+by running the following in the project root:
 ```
 npm install --dev-save
 ```
