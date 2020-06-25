@@ -23,7 +23,8 @@ to download PDF.
 
 ## Code
 
-Django/Python scripts live in the standard location: `appname/management/commands`.
+Django/Python. Scripts live in the standard location
+(`appname/management/commands`).
 
 Javascript uses [jQuery](https://jquery.com).
 
