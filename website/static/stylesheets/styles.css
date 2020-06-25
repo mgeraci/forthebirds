@@ -824,7 +824,7 @@ html, body {
       @media (max-width: 750px) {
         #home .home-thanks-intro-text {
           text-align: center; } }
-  #home .home-thanks-supporters {
+  #home .home-thanks-list {
     width: 100%;
     margin-top: 20px;
     color: #9ba5a9; }

@@ -20,7 +20,7 @@
     </ul>
   </div>
 
-  {% if supporters %}
+  {% if patreon_thank_yous %}
     <div class="home-thanks">
       <div class="home-thanks-intro">
         <a href="{{ PATREON_LINK }}">
@@ -43,9 +43,9 @@
         </div>
       </div>
 
-      <div class="home-thanks-supporters">
-        {% for supporter in supporters %}
-          {{ supporter.text }}{% if not forloop.last %}, {% endif %}
+      <div class="home-thanks-list">
+        {% for patreon_thank_you in patreon_thank_yous %}
+          {{ patreon_thank_you.text }}{% if not forloop.last %}, {% endif %}
         {% endfor %}
       </div>
     </div>
