@@ -8,8 +8,6 @@ import django.utils.timezone
 
 class Migration(migrations.Migration):
 
-    replaces = [(b'website', '0019_thankyous'), (b'website', '0020_auto_20200621_2057'), (b'website', '0021_auto_20200621_2108'), (b'website', '0022_auto_20200621_2114')]
-
     dependencies = [
         ('website', '0018_auto_20160130_1520'),
     ]
