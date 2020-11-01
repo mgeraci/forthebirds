@@ -18,6 +18,9 @@ __pycache__/
 *.scssc
 *.css.map
 
+# Virtual environment
+forthebirds-venv
+
 # C extensions
 *.so
 
